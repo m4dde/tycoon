@@ -71,3 +71,9 @@ p {
     border-radius: 10px;
     background-color: #bfa290;
 }
+
+#bod-container {
+    display: flex;
+    justify-content: center;
+    border: solid 1px brown;
+}
