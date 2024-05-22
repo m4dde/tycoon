@@ -9,13 +9,13 @@ function vaffelKnapp() {
 
 let bobaLager = 0;
 let kroner = 0;
+let selge = 0;
 let produksjon = 0;
-const inventory = { sitron: 0, kopper: 0, sukker: 0, vann: 0 }
 
 
 function lageBoba() {
     bobaLager++;
-    kroner += bobaLager;
+    selge += kroner;
     document.getElementById("te-teller").textContent = bobaLager
     document.getElementById("penger").textContent = kroner
 
