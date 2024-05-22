@@ -64,6 +64,7 @@ p {
 #inventory {
     display: inline;
     margin: auto;
+    width: 18rem;
     padding: 20px;
     border: 2px solid #6F4E37;
     border-radius: 10px;
