@@ -73,6 +73,18 @@ p {
     color: #6F4E37;
 }
 
+#meny {
+    display: inline;
+    margin: auto;
+    width: 18rem;
+    padding: 20px;
+    border: 2px solid #6F4E37;
+    border-radius: 10px;
+    background-color: #bfa290;
+    font-family: 'Titan One', sans-serif;
+    color: #6F4E37;
+}
+
 #bod-container {
     display: flex;
     justify-content: center;
