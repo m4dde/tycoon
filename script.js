@@ -19,3 +19,7 @@ function lageBoba() {
     document.getElementById("te-teller").textContent = bobaLager
     document.getElementById("penger").textContent = kroner
 }
+
+function produksjon() {
+    document.getElementById("").textContent =
+}
