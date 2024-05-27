@@ -18,8 +18,4 @@ function lageBoba() {
     selge += kroner;
     document.getElementById("te-teller").textContent = bobaLager
     document.getElementById("penger").textContent = kroner
-
-    setTimeout(function() {
-        document.getElementById("varselBoks").style.display = "block;"
-    }, 5000);
 }
