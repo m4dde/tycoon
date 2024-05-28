@@ -20,6 +20,9 @@ function lageBoba() {
     document.getElementById("penger").textContent = kroner
 }
 
-function produksjon() {
-    document.getElementById("").textContent =
+function produkt() {
+    document.getElementById("tapioca").textContent =
+    document.getElementById("kopper").textContent =
+    document.getElementById("sukker").textContent =
+    document.getElementById("melk").textContent =
 }
