@@ -13,15 +13,19 @@ let selge = 0;
 
 
 function lageBoba() {
+    
     document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) - 1;
-    document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) - 1;
-    document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) - 1;
-    document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) - 1;
+    document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) - 3;
+    document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) - 5;
+    document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) - 2;
 
     bobaLager++;
     kroner -= 4;
     document.getElementById("te-teller").textContent = bobaLager
     document.getElementById("penger").textContent = kroner
+    /*else {
+        alert("Du har ikke flere boba i lager!")
+    }*/
 }
 
 function selgeBoba() {
@@ -30,9 +34,12 @@ function selgeBoba() {
         bobaLager -= 1;
         document.getElementById("te-teller").textContent = bobaLager;
         document.getElementById("penger").textContent = kroner;
-    } else {
-        alert("Du har ikke flere boba i lager!")
     }
+}
+
+function kjopBoba() {
+    if (kopper > 0 && tapioca > 0 && sukker > 0 && melk > 0) {
+    } else alert("Ikke nok penger")
 }
 
 /*function kjøpTapioca() {

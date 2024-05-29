@@ -41,22 +41,12 @@ p {
     font-size: 22px;
 }
 
-#varsel {
-    border: 2px solid #6F4E37;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 50px auto;
-    max-width: 400px;
-    background-color: #dc747d;
-    font-family: 'Titan One', sans-serif;
-    color: #6F4E37;
-}
-
 #produksjon {
     display: inline;
     margin: auto;
     width: 18rem;
     padding: 20px;
+    height: 25rem;
     border: 2px solid #6F4E37;
     border-radius: 10px;
     background-color: #bfa290;
@@ -81,6 +71,7 @@ p {
     margin: auto;
     width: 18rem;
     padding: 20px;
+    height: 25rem;
     border: 2px solid #6F4E37;
     border-radius: 10px;
     background-color: #bfa290;
@@ -91,6 +82,5 @@ p {
 #bod-container {
     display: flex;
     justify-content: center;
-    border: solid 1px brown;
-    margin-top: 20px;
+    margin-top: 5rem;
 }
