@@ -26,15 +26,6 @@ h1 {
     justify-content: center;
 }
 
-#produksjon {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 2px solid #6F4E37;
-    border-radius: 10px;
-    background-color: #bfa290;
-}
-
 button {
     margin: 10px;
     padding: 9px 18px;
@@ -57,6 +48,18 @@ p {
     margin: 50px auto;
     max-width: 400px;
     background-color: #dc747d;
+    font-family: 'Titan One', sans-serif;
+    color: #6F4E37;
+}
+
+#produksjon {
+    display: inline;
+    margin: auto;
+    width: 18rem;
+    padding: 20px;
+    border: 2px solid #6F4E37;
+    border-radius: 10px;
+    background-color: #bfa290;
     font-family: 'Titan One', sans-serif;
     color: #6F4E37;
 }
