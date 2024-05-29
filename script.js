@@ -14,13 +14,34 @@ let selge = 0;
 
 function lageBoba() {
     bobaLager++;
-    selge += kroner;
     document.getElementById("te-teller").textContent = bobaLager
     document.getElementById("penger").textContent = kroner
 }
 
 function kjøpTapioca() {
-    if (kroner >= 1)
-        kroner -= 1;
-    document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) + 1;
+    if (kroner >= 5)
+        kroner -= 5;
+    document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) - 1;
+    document.getElementById("penger").textContent = kroner
+}
+
+function kjøpKopper() {
+    if (kroner >= 5)
+        kroner -= 5;
+    document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) - 1;
+    document.getElementById("penger").textContent = kroner
+}
+
+function kjøpSukker() {
+    if (kroner >= 5)
+        kroner -= 5;
+    document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) - 1;
+    document.getElementById("penger").textContent = kroner
+}
+
+function kjøpMelk() {
+    if (kroner >= 5)
+        kroner -= 5;
+    document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) - 1;
+    document.getElementById("penger").textContent = kroner
 }
