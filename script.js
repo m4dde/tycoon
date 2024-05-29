@@ -13,12 +13,29 @@ let selge = 0;
 
 
 function lageBoba() {
+    document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) - 1;
+    document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) - 1;
+    document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) - 1;
+    document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) - 1;
+
     bobaLager++;
+    kroner -= 4;
     document.getElementById("te-teller").textContent = bobaLager
     document.getElementById("penger").textContent = kroner
 }
 
-function kjøpTapioca() {
+function selgeBoba() {
+    if (bobaLager > 0) {
+        kroner += 12;
+        bobaLager -= 1;
+        document.getElementById("te-teller").textContent = bobaLager;
+        document.getElementById("penger").textContent = kroner;
+    } else {
+        alert("Du har ikke flere boba i lager!")
+    }
+}
+
+/*function kjøpTapioca() {
     if (kroner >= 5)
         kroner -= 5;
     document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) - 1;
@@ -44,4 +61,4 @@ function kjøpMelk() {
         kroner -= 5;
     document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) - 1;
     document.getElementById("penger").textContent = kroner
-}
+}*/
