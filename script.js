@@ -8,9 +8,8 @@ function vaffelKnapp() {
 }*/
 
 let bobaLager = 0;
-let kroner = 0;
+let kroner = 100;
 let selge = 0;
-let produksjon = 0;
 
 
 function lageBoba() {
@@ -20,9 +19,8 @@ function lageBoba() {
     document.getElementById("penger").textContent = kroner
 }
 
-function produkt() {
-    document.getElementById("tapioca").textContent =
-    document.getElementById("kopper").textContent =
-    document.getElementById("sukker").textContent =
-    document.getElementById("melk").textContent =
+function kjøpTapioca() {
+    if (kroner >= 1)
+        kroner -= 1;
+    document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) + 1;
 }
