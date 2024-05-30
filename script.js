@@ -10,22 +10,31 @@ function vaffelKnapp() {
 let bobaLager = 0;
 let kroner = 100;
 let selge = 0;
+let tapioca = parseInt(document.getElementById("tapioca").textContent);
+let kopper = parseInt(document.getElementById("kopper").textContent);
+let sukker = parseInt(document.getElementById("sukker").textContent);
+let melk = parseInt(document.getElementById("melk").textContent);
 
 
 function lageBoba() {
-    
-    document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) - 1;
-    document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) - 3;
-    document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) - 5;
-    document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) - 2;
+    if (tapioca > 0 && kopper > 0 && sukker > 0 && melk > 0) {
+        tapioca -= 3;
+        kopper -= 1;
+        sukker -= 5;
+        melk -= 2;
 
-    bobaLager++;
-    kroner -= 4;
-    document.getElementById("te-teller").textContent = bobaLager
-    document.getElementById("penger").textContent = kroner
-    /*else {
-        alert("Du har ikke flere boba i lager!")
-    }*/
+        document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) - 1;
+        document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) - 3;
+        document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) - 5;
+        document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) - 2;
+
+        bobaLager++;
+        kroner -= 4;
+        document.getElementById("te-teller").textContent = bobaLager
+        document.getElementById("penger").textContent = kroner
+    } else {
+        alert("Fyll up manglende varer!")
+    }
 }
 
 function selgeBoba() {
@@ -37,35 +46,37 @@ function selgeBoba() {
     }
 }
 
-function kjopBoba() {
+/*function kjopBoba() {
     if (kopper > 0 && tapioca > 0 && sukker > 0 && melk > 0) {
     } else alert("Ikke nok penger")
-}
-
-/*function kjøpTapioca() {
-    if (kroner >= 5)
-        kroner -= 5;
-    document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) - 1;
-    document.getElementById("penger").textContent = kroner
-}
-
-function kjøpKopper() {
-    if (kroner >= 5)
-        kroner -= 5;
-    document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) - 1;
-    document.getElementById("penger").textContent = kroner
-}
-
-function kjøpSukker() {
-    if (kroner >= 5)
-        kroner -= 5;
-    document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) - 1;
-    document.getElementById("penger").textContent = kroner
-}
-
-function kjøpMelk() {
-    if (kroner >= 5)
-        kroner -= 5;
-    document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) - 1;
-    document.getElementById("penger").textContent = kroner
 }*/
+
+
+
+function kjopTapioca() {
+    if (kroner >= 3)
+        kroner += 3;
+    document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) + 1;
+    document.getElementById("penger").textContent = kroner
+}
+
+function kjopKopper() {
+    if (kroner >= 1)
+        kroner += 1;
+    document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) + 1;
+    document.getElementById("penger").textContent = kroner
+}
+
+function kjopSukker() {
+    if (kroner >= 5)
+        kroner += 5;
+    document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) + 1;
+    document.getElementById("penger").textContent = kroner
+}
+
+function kjopMelk() {
+    if (kroner >= 2)
+        kroner += 2;
+    document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) + 1;
+    document.getElementById("penger").textContent = kroner
+}
