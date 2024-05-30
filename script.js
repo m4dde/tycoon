@@ -58,41 +58,57 @@ function selgeBoba() {
 
 //Funksjon for å kjøpe tapioca
 function kjopTapioca() {
-    //Sjekker om det er nok penger
-    if (kroner >= 3)
-        //Reduserer pengene når man skal kjøpe materialet og når man bruker det
-        kroner -= 3;
-    //Oppdaterer
-    document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) + 1;
-    document.getElementById("penger").textContent = kroner
+        //Sjekker om det er nok penger
+        if (kroner >= 3) {
+            //Reduserer pengene når man skal kjøpe materialet og når man bruker det
+            kroner -= 3;
+        //Oppdaterer
+        document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) + 1;
+        document.getElementById("penger").textContent = kroner
+    } else {
+        alert("Ikke nok penger")
+        kroner = Math.max(kroner, 0);
+    }
 }
 
 //Funksjon for å kjøpe kopper
 function kjopKopper() {
-    //Sjekker om det er nok penger. Koster 1kr for hver kopp som brukes
-    if (kroner >= 1)
-        //Reduserer pengene når man skal kjøpe materialet og når man bruker det
-        kroner -= 1;
-    document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) + 1;
-    document.getElementById("penger").textContent = kroner
+        //Sjekker om det er nok penger. Koster 1kr for hver kopp som brukes
+        if (kroner >= 1) {
+            //Reduserer pengene når man skal kjøpe materialet og når man bruker det
+            kroner -= 1;
+        document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) + 1;
+        document.getElementById("penger").textContent = kroner
+    } else {
+        alert("Ikke nok penger")
+        kroner = Math.max(kroner, 0);
+    }
 }
 
 //Funksjon for å kjøpe sukker
 function kjopSukker() {
-    //Sjekker om det er nok penger
-    if (kroner >= 5)
-        //Reduserer pengene når man skal kjøpe materialet og når man bruker det
-        kroner -= 5;
-    document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) + 1;
-    document.getElementById("penger").textContent = kroner
+        //Sjekker om det er nok penger
+        if (kroner >= 5) {
+            //Reduserer pengene når man skal kjøpe materialet og når man bruker det
+            kroner -= 5;
+        document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) + 1;
+        document.getElementById("penger").textContent = kroner
+    } else {
+        alert("Ikke nok penger")
+        kroner = Math.max(kroner, 0);
+    }
 }
 
 //Funksjon for å kjøpe melk
 function kjopMelk() {
-    //Sjekker om det er nok penger
-    if (kroner >= 2)
-        //Reduserer pengene når man skal kjøpe materialet og når man bruker det
-        kroner -= 2;
-    document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) + 1;
-    document.getElementById("penger").textContent = kroner
+        //Sjekker om det er nok penger
+        if (kroner >= 2) {
+            //Reduserer pengene når man skal kjøpe materialet og når man bruker det
+            kroner -= 2;
+        document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) + 1;
+        document.getElementById("penger").textContent = kroner
+    } else {
+        alert("Ikke nok penger")
+        kroner = Math.max(kroner, 0);
+    }
 }
