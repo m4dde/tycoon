@@ -61,7 +61,7 @@ function kjopTapioca() {
     //Sjekker om det er nok penger
     if (kroner >= 3)
         //Reduserer pengene når man skal kjøpe materialet og når man bruker det
-        kroner += 3;
+        kroner -= 3;
     //Oppdaterer
     document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) + 1;
     document.getElementById("penger").textContent = kroner
@@ -72,7 +72,7 @@ function kjopKopper() {
     //Sjekker om det er nok penger. Koster 1kr for hver kopp som brukes
     if (kroner >= 1)
         //Reduserer pengene når man skal kjøpe materialet og når man bruker det
-        kroner += 1;
+        kroner -= 1;
     document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) + 1;
     document.getElementById("penger").textContent = kroner
 }
@@ -82,7 +82,7 @@ function kjopSukker() {
     //Sjekker om det er nok penger
     if (kroner >= 5)
         //Reduserer pengene når man skal kjøpe materialet og når man bruker det
-        kroner += 5;
+        kroner -= 5;
     document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) + 1;
     document.getElementById("penger").textContent = kroner
 }
@@ -92,7 +92,7 @@ function kjopMelk() {
     //Sjekker om det er nok penger
     if (kroner >= 2)
         //Reduserer pengene når man skal kjøpe materialet og når man bruker det
-        kroner += 2;
+        kroner -= 2;
     document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) + 1;
     document.getElementById("penger").textContent = kroner
 }
