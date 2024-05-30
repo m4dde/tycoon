@@ -7,6 +7,13 @@ function vaffelKnapp() {
     document.getElementById("viserVarebeholdning").textContent = vaffellager
 }*/
 
+
+/*
+Kommenter på koden
+Finne ut funksjon når du ikke har mer penger
+Lage bilder
+*/ 
+
 let bobaLager = 0;
 let kroner = 100;
 let selge = 0;
