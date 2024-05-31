@@ -73,6 +73,7 @@ p {
     }
 }
 
+/*Stil til meny-div-elemntet bildene*/
 #bilderContainer {
     display: grid;
     justify-content: center;
@@ -90,3 +91,10 @@ p {
     justify-content: center;
 }
 
+#chalkboard {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    width: 250px;
+}
