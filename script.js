@@ -13,12 +13,16 @@ let tapioca = parseInt(document.getElementById("tapioca").textContent);
 let kopper = parseInt(document.getElementById("kopper").textContent);
 let sukker = parseInt(document.getElementById("sukker").textContent);
 let melk = parseInt(document.getElementById("melk").textContent);
+let tapiocaLager = 100
+let kopperLager = 100
+let sukkerLager = 100
+let melkLager = 100
 
 
 //Funskjon for å lage selve boba drikken
 function lageBoba() {
     //Betingelse som holder styr om det er nok materialer tilgjengelige
-    if (tapioca > 0 && kopper > 0 && sukker > 0 && melk > 0) {
+    if (tapiocaLager > 0 && kopperLager > 0 && sukkerLager > 0 && melkLager > 0) {
         //Reduserer antall varer fra lageret
         tapioca -= 3;
         kopper -= 1;
