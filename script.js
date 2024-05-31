@@ -9,10 +9,10 @@ Lage bilder
 let bobaLager = 0;
 let kroner = 100;
 let selge = 0;
-let tapioca = parseInt(document.getElementById("tapioca").textContent);
-let kopper = parseInt(document.getElementById("kopper").textContent);
-let sukker = parseInt(document.getElementById("sukker").textContent);
-let melk = parseInt(document.getElementById("melk").textContent);
+let tapiocaTekst = document.getElementById("tapioca");
+let kopperTekst = document.getElementById("kopper");
+let sukkerTekst = document.getElementById("sukker");
+let melkTekst = document.getElementById("melk");
 let tapiocaLager = 100
 let kopperLager = 100
 let sukkerLager = 100
@@ -24,16 +24,16 @@ function lageBoba() {
     //Betingelse som holder styr om det er nok materialer tilgjengelige
     if (tapiocaLager > 0 && kopperLager > 0 && sukkerLager > 0 && melkLager > 0) {
         //Reduserer antall varer fra lageret
-        tapioca -= 3;
-        kopper -= 1;
-        sukker -= 5;
-        melk -= 2;
+        tapiocaLager -= 3;
+        kopperLager -= 1;
+        sukkerLager -= 5;
+        melkLager -= 2;
 
         //Oppdaterer visningen på varene
-        document.getElementById("kopper").textContent = parseInt(document.getElementById("kopper").textContent) - 1;
-        document.getElementById("tapioca").textContent = parseInt(document.getElementById("tapioca").textContent) - 3;
-        document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) - 5;
-        document.getElementById("melk").textContent = parseInt(document.getElementById("melk").textContent) - 2;
+        tapiocaTekst.textContent = tapiocaLager 
+        kopperTekst.textContent = kopperLager 
+        sukkerTekst.textContent = sukkerLager 
+        melkTekst.textContent = melkLager 
 
         //Viser at det skal øke i antall boba som blir laget
         bobaLager++;
@@ -71,8 +71,7 @@ function kjopTapioca() {
         document.getElementById("penger").textContent = kroner
     } else {
         alert("Ikke nok penger")
-        kroner = 0;
-        //kroner = Math.max(kroner, 0); //returnerer verdien
+        kroner = Math.max(kroner, 0); //returnerer verdien
     }
 }
 
