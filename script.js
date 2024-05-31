@@ -26,7 +26,7 @@ function lageBoba() {
         //Reduserer antall varer fra lageret
         tapiocaLager -= 3;
         kopperLager -= 1;
-        sukkerLager -= 5;
+        sukkerLager -= 2;
         melkLager -= 2;
 
         //Oppdaterer visningen på varene
@@ -92,9 +92,9 @@ function kjopKopper() {
 //Funksjon for å kjøpe sukker
 function kjopSukker() {
         //Sjekker om det er nok penger
-        if (kroner >= 5) {
+        if (kroner >= 2) {
             //Reduserer pengene når man skal kjøpe materialet og når man bruker det
-            kroner -= 5;
+            kroner -= 2;
         document.getElementById("sukker").textContent = parseInt(document.getElementById("sukker").textContent) + 1;
         document.getElementById("penger").textContent = kroner
     } else {
