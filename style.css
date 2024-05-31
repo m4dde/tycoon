@@ -49,9 +49,9 @@ p {
 #produksjon, #inventory, #meny {
     display: inline-block; /*For å tillate flate layout*/
     margin: auto;
-    width: 18rem;
+    width: 25rem;
     padding: 20px;
-    height: 25rem;
+    height: 30rem;
     border: 2px solid #6F4E37;
     border-radius: 10px;
     background-color: #bfa290;
@@ -71,5 +71,22 @@ p {
     .header, #bod-container {
         flex-direction: column;
     }
+}
+
+#bilderContainer {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+} 
+
+#section2 {
+    display: flex;
+    justify-content: center;
 }
 

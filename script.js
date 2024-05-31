@@ -1,10 +1,3 @@
-
-/*
-Kommenter på koden
-Finne ut funksjon når du ikke har mer penger
-Lage bilder
-*/ 
-
 //Variabler som holder oversikt på antall boba, penger og tilgjengelige varer/materialer
 let bobaLager = 0;
 let kroner = 100;
