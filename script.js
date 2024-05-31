@@ -67,7 +67,7 @@ function kjopTapioca() {
         document.getElementById("penger").textContent = kroner
     } else {
         alert("Ikke nok penger")
-        kroner = Math.max(kroner, 0);
+        kroner = Math.max(kroner, 0); //returnerer verdien
     }
 }
 
