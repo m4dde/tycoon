@@ -23,7 +23,7 @@ function lageBoba() {
         melkLager -= 2;
 
         //Oppdaterer visningen på varene
-        tapiocaTekst.textContent = tapiocaLager 
+        tapiocaTekst.textContent = tapiocaLager
         kopperTekst.textContent = kopperLager 
         sukkerTekst.textContent = sukkerLager 
         melkTekst.textContent = melkLager 
@@ -43,7 +43,7 @@ function lageBoba() {
 //Selve funksjonen for å selge produktet
 function selgeBoba() {
     //Innsjekk om det er tilgjengelig på boba
-    if (bobaLager > 0 && kroner > 0) {
+    if (bobaLager > 0) {
         //Øker pengene etter man har solgt det
         kroner += 10;
         //Reduserer lagrede boba
