@@ -65,6 +65,7 @@ function kjopTapioca() {
     } else {
         alert("Ikke nok penger")
         kroner = Math.max(kroner, 0); //returnerer verdien
+        document.getElementById("penger").textContent = kroner
     }
 }
 
@@ -79,6 +80,7 @@ function kjopKopper() {
     } else {
         alert("Ikke nok penger")
         kroner = Math.max(kroner, 0);
+        document.getElementById("penger").textContent = kroner
     }
 }
 
@@ -93,6 +95,7 @@ function kjopSukker() {
     } else {
         alert("Ikke nok penger")
         kroner = Math.max(kroner, 0);
+        document.getElementById("penger").textContent = kroner
     }
 }
 
@@ -107,5 +110,6 @@ function kjopMelk() {
     } else {
         alert("Ikke nok penger")
         kroner = Math.max(kroner, 0);
+        document.getElementById("penger").textContent = kroner
     }
 }
