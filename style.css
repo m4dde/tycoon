@@ -99,3 +99,10 @@ p {
     padding: 0;
     width: 200px;
 }
+
+#imgContainer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 150px;
+}
