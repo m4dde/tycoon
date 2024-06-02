@@ -43,7 +43,7 @@ function lageBoba() {
 //Selve funksjonen for å selge produktet
 function selgeBoba() {
     //Innsjekk om det er tilgjengelig på boba
-    if (bobaLager > 0) {
+    if (bobaLager > 0 && kroner > 0) {
         //Øker pengene etter man har solgt det
         kroner += 10;
         //Reduserer lagrede boba
