@@ -91,10 +91,11 @@ p {
     justify-content: center;
 }
 
-#chalkboard {
+/*Stil til produksjon skiltet*/
+#skilt1 {
     display: flex;
     justify-content: center;
     margin: auto;
     padding: 0;
-    width: 250px;
+    width: 200px;
 }
