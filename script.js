@@ -45,7 +45,7 @@ function selgeBoba() {
     //Innsjekk om det er tilgjengelig på boba
     if (bobaLager > 0) {
         //Øker pengene etter man har solgt det
-        kroner += 12;
+        kroner += 10;
         //Reduserer lagrede boba
         bobaLager -= 1;
         document.getElementById("te-teller").textContent = bobaLager;
