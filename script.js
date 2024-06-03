@@ -15,7 +15,7 @@ let melkLager = 100
 //Funskjon for å lage selve boba drikken
 function lageBoba() {
     //Betingelse som holder styr om det er nok materialer tilgjengelige
-    if (tapiocaLager > 0 && kopperLager > 0 && sukkerLager > 0 && melkLager > 0) {
+    if (tapiocaLager >= 3 && kopperLager > 0 && sukkerLager > 0 && melkLager > 0) {
         //Reduserer antall varer fra lageret
         tapiocaLager -= 3;
         kopperLager -= 1;
