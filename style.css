@@ -100,6 +100,7 @@ p {
     width: 200px;
 }
 
+/*Stil for container til inventory div elementet*/
 #imgContainer {
     display: flex;
     justify-content: center;
