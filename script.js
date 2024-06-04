@@ -15,7 +15,7 @@ let melkLager = 100
 //Funskjon for å lage selve boba drikken
 function lageBoba() {
     //Betingelse som holder styr om det er nok materialer tilgjengelige
-    if (tapiocaLager >= 3 && kopperLager > 0 && sukkerLager > 0 && melkLager > 0) {
+    if (tapiocaLager >= 3 && kopperLager >= 1 && sukkerLager >= 2 && melkLager >= 2) {
         //Reduserer antall varer fra lageret
         tapiocaLager -= 3;
         kopperLager -= 1;
@@ -45,7 +45,7 @@ function selgeBoba() {
     //Innsjekk om det er tilgjengelig på boba
     if (bobaLager > 0) {
         //Øker pengene etter man har solgt det
-        kroner += 10;
+        kroner += 15;
         //Reduserer lagrede boba
         bobaLager -= 1;
         document.getElementById("te-teller").textContent = bobaLager;
