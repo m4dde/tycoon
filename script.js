@@ -36,7 +36,7 @@ function lageBoba() {
         document.getElementById("penger").textContent = kroner
     } else {
         //Varsel som sier i fra om manglende varer hvis det er tomt.
-        alert("Fyll up manglende varer!")
+        alert("Fyll up manglende varer eller ikke nok penger!")
     }
 }
 
