@@ -26,7 +26,7 @@ function lageBoba() {
         tapiocaTekst.textContent = tapiocaLager
         kopperTekst.textContent = kopperLager 
         sukkerTekst.textContent = sukkerLager 
-        melkTekst.textContent = melkLager 
+        melkTekst.textContent = melkLager
 
         //Viser at det skal øke i antall boba som blir laget
         bobaLager++;
